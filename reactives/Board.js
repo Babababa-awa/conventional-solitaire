@@ -199,8 +199,8 @@ export default class {
 
         this.backpack.slots[i].removeCard()
       } else if (card.item.type === 'fake') {
-        this.state.score.happiness -= card.item.happiness
-        this.state.hotel.happiness -= card.item.happiness
+        this.state.score.happiness += card.item.happiness
+        this.state.hotel.happiness += card.item.happiness
         this.state.hotel.lemons -= 1
         ++this.state.hotel.fake
 

@@ -23,7 +23,6 @@ export default class {
 
     this.stars = {
       active: false,
-      // dealt: false,
       stolenLemons: 0,
     }
 
@@ -81,7 +80,7 @@ export default class {
   }
 
   endStars() {
-    this.score.lemons += this.state.stars.stolenLemons
+    this.score.lemons += this.stars.stolenLemons
     this.stars.stolenLemons = 0
     this.stars.active = false
 
