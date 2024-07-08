@@ -41,10 +41,6 @@ export default class extends CardCollection {
       }
 
       if (this.state.piles.sort === 'color') {
-        if (this.lastCard.matchesSuit(card)) {
-          return false
-        }
-
         if (!this.lastCard.matchesColor(card)) {
           return false
         }
@@ -127,7 +123,6 @@ export default class extends CardCollection {
         return false
       }
 
-      // TODO: Should stars be incuded in this?
       if (lastSuit !== null && lastSuit === this.cards[i].suit) {
         return false
       }

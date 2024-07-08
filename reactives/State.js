@@ -76,7 +76,6 @@ export default class {
     if (!this.stars.active) {
       this.deck.stars = true
       this.stars.active = true
-      // this.stars.dealt = false
     }
     this.stars.stolenLemons += lemons
   }
@@ -85,7 +84,6 @@ export default class {
     this.score.lemons += this.state.stars.stolenLemons
     this.stars.stolenLemons = 0
     this.stars.active = false
-    // this.stars.dealt = false
 
     useAudioStore().playAudio('lemon')
   }

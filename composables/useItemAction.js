@@ -67,9 +67,7 @@ export function useItemAction(board, action) {
       break
     case 'dispose':
       if (withItem) {
-        console.log(withItem)
         const item = board.items.getItemFromName(withItem)
-        console.log(item)
         if (item && item.actionAudio) {
           audioStore.playAudio(item.actionAudio)
         }

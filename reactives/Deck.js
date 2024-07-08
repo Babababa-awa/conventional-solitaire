@@ -18,14 +18,12 @@ export default class extends CardCollection {
 
   prepend() {
     let cards = this.cards
-    console.log('build from prepend')
     this.cards = this._build()
     this.cards.push(...cards)
   }
 
   getNextCard() {
     if (this.length === 0) {
-      console.log('build from next')
       this.cards = this._build()
     }
 

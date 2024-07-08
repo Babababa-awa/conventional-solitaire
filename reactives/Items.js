@@ -49,7 +49,7 @@ const TRAP_ITEMS = {
     title: 'Dizzgusting Creature',
     description: 'Dizzychi keeps getting in your way, what does it even want?',
     image: '/image/item/trap/dizzy-creature.avif',
-    frequency: 3,
+    frequency: 2,
     happiness: -15,
     stock: 1,
     clear: ['ember-creature', 'bug-spray'],
