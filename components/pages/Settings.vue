@@ -64,7 +64,11 @@ function setJellyMode() {
     forceOneTurnSound.value.play()
   }
 
-  window.localStorage.setItem('jellymode', (forceOneTurn.value ? 1 : 0))
+  try {
+    window.localStorage.setItem('jellymode', (forceOneTurn.value ? 1 : 0))
+  } catch {
+    // Do nothing
+  }
 }
 
 function setNoBgm() {

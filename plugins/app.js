@@ -6,7 +6,11 @@ export default defineNuxtPlugin(async _nuxtApp => {
     noSfx,
   } = storeToRefs(settingsStore)
 
-  forceOneTurn.value = window.localStorage.getItem('jellymode') === '1'
-  noBgm.value = window.localStorage.getItem('nobgm') === '1'
-  noSfx.value = window.localStorage.getItem('nosfx') === '1'
+  try {
+    forceOneTurn.value = window.localStorage.getItem('jellymode') === '1'
+    noBgm.value = window.localStorage.getItem('nobgm') === '1'
+    noSfx.value = window.localStorage.getItem('nosfx') === '1'
+  } catch {
+    // Do nothing
+  }
 })
