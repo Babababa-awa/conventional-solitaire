@@ -142,10 +142,12 @@ export default class {
         if (suit === 'stars') {
           this.stacks.decreaseSlots()
           this.state.endStars()
+          this.hotelRun()
+        } else {
+          this.hotelRun()
+          this.dealNext()
         }
 
-        this.hotelRun()
-        this.dealNext()
       } else {
         useItemEvaluate(this, target)
       }
@@ -226,11 +228,7 @@ export default class {
       this._deck.prepend()
     }
 
-    let total = 52
-
-    if (this._deck.suits === 5) {
-      total += 13
-    }
+    let total = this._deck.suits * 13
 
     total += this.state.deck.itemCount
 

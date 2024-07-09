@@ -54,7 +54,7 @@ export default class extends CardCollection {
     }
 
     // Reset stars action
-    if (this.state.stars.active) {
+    if (this.state.deck.stars) {
       this.state.deck.stars = false
     }
 

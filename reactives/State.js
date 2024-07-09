@@ -83,6 +83,7 @@ export default class {
     this.score.lemons += this.stars.stolenLemons
     this.stars.stolenLemons = 0
     this.stars.active = false
+    this.deck.stars = false
 
     useAudioStore().playAudio('lemon')
   }
