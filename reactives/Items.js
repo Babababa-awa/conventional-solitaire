@@ -96,7 +96,7 @@ const FAKE_ITEMS = {
   'jelle-hoshmi-poster': {
     title: 'Authentic Jelle Hoshmi Poster',
     image: '/image/item/fake/jelle-hoshmi.avif',
-    description: 'A guenuine poster of the >w< super seiso >o< super cute >w< idol princess of the stars Jelle Hoshmi of Craze Collect.',
+    description: 'A genuine poster of the >w< super seiso >o< super cute >w< idol princess of the stars Jelle Hoshmi of Craze Collect.',
     price: 2,
     happiness: -4,
   },
@@ -202,7 +202,7 @@ const REAL_ITEMS = {
   'kettle': {
     title: 'Jelly Kettle',
     image: '/image/item/real/kettle.avif',
-    description: 'Use it to brew your Jelly Flavored Coffed!',
+    description: 'Use it to brew your Jelly Flavored Coffee!',
     frequency: 1,
     price: 4,
     happiness: 4,

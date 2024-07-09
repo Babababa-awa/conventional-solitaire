@@ -12,11 +12,11 @@
     >
       <div class="flex flex-col space-y-0.5vw">
         <BoardItemStat>
-          Real Merch Aquired: {{ board.state.hotel.real }}
+          Real Merch Acquired: {{ board.state.hotel.real }}
         </BoardItemStat>
 
         <BoardItemStat>
-          Fake Merch Aquired: {{ board.state.hotel.fake }}
+          Fake Merch Acquired: {{ board.state.hotel.fake }}
         </BoardItemStat>
 
         <BoardItemStat>
