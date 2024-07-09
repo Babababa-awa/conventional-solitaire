@@ -321,6 +321,7 @@ function playTrack(name) {
       mainAudio.value.play()
       break
     case 'lair':
+      lairAudio.value.volume = 0.35
       lairAudio.value.play()
       break
     case 'credits':
